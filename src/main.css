@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .separador{
+        @apply grid grid-cols-4 px-8 py-2 place-items-center bg-decredgreen shadow-lg;
+    }
+    .boton-amarillo{
+        @apply bg-decredyellow rounded-xl px-4 font-bold uppercase text-sm shadow-md;
+    }
+}
+
