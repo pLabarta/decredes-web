@@ -585,6 +585,34 @@ video {
   }
 }
 
+.separador{
+  --tw-bg-opacity: 1;
+  background-color: rgba(45, 216, 163, var(--tw-bg-opacity));
+  display: grid;
+  place-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.boton-amarillo{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 200, 78, var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  text-transform: uppercase;
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -191633,3 +191661,4 @@ video {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
+
