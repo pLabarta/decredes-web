@@ -10,8 +10,14 @@ module.exports = {
         decredyellow: '#FFC84E'
       },
       fontFamily: {
-        'decred': ['Source Sans Pro','sans-serif']
-      }
+        'decred': ['Source Sans Pro', 'sans-serif']
+      },
+      zIndex: {
+        'negative': '-1',
+      },
+      inset: {
+        '0': '0',
+      },
     },
   },
   variants: {

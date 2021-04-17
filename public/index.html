@@ -16,23 +16,30 @@
 <body class="bg-decreddark font-decred text-white">
 
     <header class="hidden">
-        <nav class="">
+        <nav class="md:p-3 py-2 z-10">
             <div class="container flex items-center justify-between mx-auto px-8 pt-8">
-
                 <a href="#">
                     <img src="img/isologo.png" alt="">
                 </a>
-
                 <a href="" class="text-white">X</a>
             </div>
         </nav>
     </header>
 
-    <section class="pt-36 h-screen">
-        <div class="px-10">
+    <section class="relative flex items-center justify-center h-screen">
+
+        <div class="absolute inset-1">
+            <video autoplay loop muted class="w-full h-full object-cover">
+                <source src="img/vid/decred-fond.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="absolute px-10">
             <img src="img/logo-transparent.png" alt="" class="mx-auto">
             <h1 class="text-center text-4xl font-bold mb-8">Conoce Decred</h1>
-            <p class="text-center text-xl mb-8">Decred es una moneda digital autónoma y descentralizada, dirigida por su
+            <p class="relative text-center text-xl mb-8">Decred es una moneda digital autónoma y descentralizada,
+                dirigida
+                por su
                 comunidad
             </p>
             <div class="w-full grid items-center">
@@ -42,9 +49,6 @@
             </div>
         </div>
 
-        <!-- <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-            <source src="img/vid/decred.governance.mp4" type="video/mp4" />
-        </video> -->
     </section>
 
     <section>
