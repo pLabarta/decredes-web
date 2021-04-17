@@ -11,11 +11,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="bg-decreddark font-decred text-white">
 
-    <nav class="h-screen bg-white fixed right-0 w-2/3 text-decreddark flex flex-col justify-evenly shadow-2xl z-10">
+    <nav id="nav-overlay"
+        class="nav-overlay h-screen bg-white fixed w-2/3 text-decreddark flex flex-col justify-evenly shadow-2xl z-10">
         <div class="w-full grid items-center">
             <button
                 class="py-4 mx-auto px-6 rounded-full border-decreddark border-2 text-2xl hover:bg-white text-decreddark focus:outline-none">Explorar
@@ -39,7 +41,7 @@
         </ul>
     </nav>
 
-    <div class="filter blur-sm overflow-y-hidden h-screen">
+    <div id="all-content" class="filter">
 
         <header class="fixed bg-white w-full h-16 grid items-center">
             <nav class="">
@@ -49,9 +51,9 @@
                         <img class="h-8" src="img/isologo-dark.png" alt="">
                     </a>
 
-                    <a href="#">
+                    <button id="burga" onclick="toggleNav()">
                         <img class="h-12" src="img/icon/burga.png" alt="">
-                    </a>
+                    </button>
                 </div>
             </nav>
         </header>

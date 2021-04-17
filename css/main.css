@@ -32569,6 +32569,15 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.nav-overlay {
+  transition: 2s;
+  left: 100vw;
+}
+
+.show {
+  left: 34vw;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -191663,4 +191672,3 @@ video {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
-

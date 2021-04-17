@@ -11,3 +11,15 @@
     }
 }
 
+.nav-overlay {
+    transition: 0.5s;
+    left: 100vw;
+}
+
+.show {
+    left: 34vw;
+}
+
+#all-content {
+    transition: 0.5;
+}
