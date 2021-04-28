@@ -87,7 +87,7 @@
 
             <div class="absolute inset-1">
                 <video autoplay loop muted class="w-full h-full object-cover">
-                    <source src="img/vid/decred-fond.mp4" type="video/mp4" />
+                    <source src="img/vid/decred-fond2.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -109,22 +109,23 @@
         </section>
 
         <section class="container mx-auto my-16">
-            <div class="iniciate px-10 flex flex-col lg:flex-row lg:max-w-4xl mx-auto items-center">
+            <div
+                class="iniciate px-10 lg:px-32 flex flex-col-reverse lg:flex-row  mx-auto items-center my-16 lg:justify-evenly gap-4">
                 <div class="flex flex-col">
                     <h2 class="text-4xl font-bold mb-4">Iníciate</h2>
                     <p>Decred en Español es tu guía para el ecosistema de DCR.<br class="hidden lg:block"> La tecnología
                         siempre está cambiando. Te recomendamos<br class="hidden lg:block"> empezar por uno de estos
                         temas:</p>
                 </div>
-                <img src="img/unlock.png" alt="" class="p-10 w-full md:w-1/2 mx-auto lg:w-1/3">
+                <img src="img/iniciate.png" alt="" class="w-full md:w-1/2 lg:w-1/3">
             </div>
 
 
 
             <!-- CARDS -->
-            <div class="cards flex flex-col lg:flex-row lg:flex-wrap gap-4 justify-center">
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
+            <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center lg:px-32 p-8">
+                <div class="card  overflow-hidden rounded-2xl overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
                         <img src="img/card/billetera.png" alt="" class="mx-auto h-2/3">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
@@ -134,9 +135,9 @@
                     </div>
                 </div>
 
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
-                        <img src="img/card/obtene.png" alt="" class="mx-auto h-2/3">
+                <div class="card  overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
+                        <img src="img/card/obtene.png" alt="" class="mx-auto h-1/2">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
                         <span class="text-2xl font-semibold">Obtiene DCR</span>
@@ -144,9 +145,9 @@
                             Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
                     </div>
                 </div>
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
-                        <img src="img/card/manos.png" alt="" class="mx-auto h-2/3">
+                <div class="card  overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
+                        <img src="img/card/manos.png" alt="" class="mx-auto h-1/2">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
                         <span class="text-2xl font-semibold">Participa del Staking</span>
@@ -154,9 +155,9 @@
                             Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
                     </div>
                 </div>
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
-                        <img src="img/card/dex.png" alt="" class="mx-auto h-2/3">
+                <div class="card  overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
+                        <img src="img/card/dex.png" alt="" class="mx-auto h-3/4">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
                         <span class="text-2xl font-semibold">Conoce DCRDEX</span>
@@ -164,9 +165,9 @@
                             Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
                     </div>
                 </div>
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
-                        <img src="img/card/lightning.png" alt="" class="mx-auto h-2/3">
+                <div class="card  overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
+                        <img src="img/card/lightning.png" alt="" class="mx-auto h-1/2">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
                         <span class="text-2xl font-semibold">Usa la Lightning Network</span>
@@ -174,9 +175,9 @@
                             Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
                     </div>
                 </div>
-                <div class="card lg:w-1/4">
-                    <div class="imagen bg-blue-200 flex items-center h-64">
-                        <img src="img/card/privacy.png" alt="" class="mx-auto h-2/3">
+                <div class="card  overflow-hidden rounded-2xl">
+                    <div class="imagen bg-blue-200 flex items-center h-48">
+                        <img src="img/card/privacy.png" alt="" class="mx-auto h-1/2">
                     </div>
                     <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
                         <span class="text-2xl font-semibold">Aprende sobre Privacidad</span>
@@ -218,9 +219,10 @@
             </div>
         </section>
 
-        <section class="bg-decreddark h-screen">
+        <section class="bg-decreddark">
             <h2 class="text-4xl text-center mt-16 font-bold ">Billeteras</h2>
-            <h3 class="text-lg text-center mt-4 mb-8">Elegí tu billetera</h3>
+            <h3 class="text-lg text-center mt-4 mb-8">La cartera de escritorio Decrediton tiene todo lo necesario para
+                gestionar tu DCR, usar la Lightning Network, acceder al sistema de Staking y participar de la DAO.</h3>
             <div class="wallets flex lg:flex-row flex-col container mx-auto lg:max-w-6xl gap-4">
                 <div class="wallet grid grid-cols-4 gap-4 p-4">
                     <div class="only-imagen pt-0">
@@ -271,6 +273,21 @@
                 </div>
 
             </div>
+            <div class="w-full grid items-center gap-4 my-8">
+                <a href="https://decred.org/wallets/" target="_blank" class="mx-auto">
+                    <button
+                        class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Ir
+                        a las descargas</button>
+                </a>
+
+                <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
+                    class="mx-auto">
+                    <button
+                        class="py-4 mx-auto px-6 rounded-full text-2xl border-white border-2 hover:bg-white hover:text-decreddark focus:outline-none transition">Aprende
+                        más</button>
+                </a>
+            </div>
+
 
         </section>
 
@@ -278,7 +295,7 @@
 
             <div class="absolute inset-1">
                 <video autoplay loop muted class="w-full h-full object-cover">
-                    <source src="img/vid/exchange.mp4" type="video/mp4" />
+                    <source src="img/vid/exchange2.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -299,73 +316,165 @@
                     </p>
 
                     <div class="w-full grid items-center">
-                        <button
-                            class="py-4 mt-4 mx-auto px-6 rounded-full border-white border-2 text-2xl hover:bg-white hover:text-decreddark focus:outline-none transition">Ver
-                            lista de exchanges</button>
+                        <a href="https://decred.org/exchanges/" target="_blank">
+                            <button
+                                class="py-4 mt-4 mx-auto px-6 rounded-full border-white border-2 text-2xl hover:bg-white hover:text-decreddark focus:outline-none transition">Ver
+                                exchanges</button>
+                        </a>
                     </div>
                 </div>
             </div>
 
         </section>
+    </div>
 
-        <section class="decred-hoy px-10">
-            <h2 class="text-4xl font-bold my-8">Decred hoy</h2>
-            <p>Últimos datos sobre la red y los mercados</p>
-            <div class="my-8">
+
+    <section id="dcrdex" class="container mx-auto">
+        <div class="px-8">
+            <div
+                class="flex lg:justify-evenly gap-4 lg:flex-row-reverse lg:px-32 lg:w-3/4 mx-auto items-center flex-col">
+                <img src="img/dcr-dex.png" alt="dex" class="mx-auto md:h-64 h-48" />
                 <div>
-                    <span class="text-xl">Precio del DCR</span>
-                    <span class="text-2xl font-bold block">789,15 USD</span>
-                    <hr class="my-4">
-                </div>
-                <div>
-                    <span class="text-xl">Precio del Ticket</span>
-                    <span class="text-2xl font-bold block">189,15 DCR</span>
-                    <hr class="my-4">
-                </div>
-                <div>
-                    <span class="text-xl">Transacciones 24hs</span>
-                    <span class="text-2xl font-bold block">789.456.123 TXs</span>
-                    <hr class="my-4">
-                </div>
-                <div>
-                    <span class="text-xl">DCR Mezclado 24hs</span>
-                    <span class="text-2xl font-bold block">789.456,42 DCR</span>
-                    <hr class="my-4">
-                </div>
-                <div>
-                    <span class="text-xl">Fondos en el Tesoro</span>
-                    <span class="text-2xl font-bold block">124.123.123 USD</span>
-                    <hr class="my-4">
+                    <h2 class="font-bold text-4xl text-center">DCRDEX</h2>
+                    <p class="my-8 lg:w-3/4 text-center">La cartera de escritorio Decrediton tiene todo lo
+                        necesario
+                        para
+                        gestionar tu
+                        DCR,
+                        usar la Lightning
+                        Network, acceder al sistema de Staking y participar de la DAO.</p>
                 </div>
             </div>
-        </section>
 
 
+            <ul class="flex flex-col my-8 gap-4 md:px-8 md:mx-auto md:w-3/4 lg:w-2/3 lg:my-16">
+                <li>
+                    <div class="flex items-center">
+                        <img src="img/line-hor.png" class="w-12 md:w-16" />
+                        <h3 class="pl-4 text-2xl">You stay in control of your money.</h3>
+                    </div>
+                    <div class="hidden">
+                        <p class="pl-8">Your coins always remain in your custody so nobody can steal them. Trades
+                            complete via atomic
+                            swaps.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <img src="img/line-hor.png" class="w-12 md:w-16" />
+                        <h3 class="pl-4 text-2xl">You stay in control of your money.</h3>
+                    </div>
+                    <div class="mt-4">
+                        <p class="pl-8 max-w-sm">Your coins always remain in your custody so nobody can steal them.
+                            Trades
+                            complete via atomic
+                            swaps.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <img src="img/line-hor.png" class="w-12 md:w-16" />
+                        <h3 class="pl-4 text-2xl">Nombre de la Feature</h3>
+                    </div>
+                    <div class="hidden">
+                        <p class="pl-8">Your coins always remain in your custody so nobody can steal them. Trades
+                            complete via atomic
+                            swaps.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <img src="img/line-hor.png" class="w-12 md:w-16" />
+                        <h3 class="pl-4 text-2xl">Nombre de la Feature</h3>
+                    </div>
+                    <div class="hidden">
+                        <p class="pl-8">Your coins always remain in your custody so nobody can steal them. Trades
+                            complete via atomic
+                            swaps.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <img src="img/line-hor.png" class="w-12 md:w-16" />
+                        <h3 class="pl-4 text-2xl">Nombre de la Feature</h3>
+                    </div>
+                    <div class="hidden">
+                        <p class="pl-8">Your coins always remain in your custody so nobody can steal them. Trades
+                            complete via atomic
+                            swaps.</p>
+                    </div>
+                </li>
+            </ul>
 
+            <div class="w-full grid items-center gap-4">
 
+                <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
+                    <button
+                        class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Descarga
+                        DCRDEX</button>
+                </a>
+                <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
+                    class="mx-auto">
+                    <button
+                        class="py-4 mx-auto px-6 rounded-full text-2xl border-gray-500 border-2 hover:bg-white hover:text-decreddark focus:outline-none transition text-gray-300">Ver
+                        la guía de instalación</button>
+                </a>
 
-
-
-        <br>
-        <footer class="text-gray-500 bg-decreddark px-8 py-4">
-            <div class="container mx-auto">
-                <img src="img/isologo.png" alt="">
-                <ul>
-                    <li>Decred.org</li>
-                    <li>Documentacion</li>
-                    <li>Descargas</li>
-                    <li>Comunidad</li>
-                    <li>Contribuye</li>
-                </ul>
-                <div class="flex gap-4 items-center bg-decredgreen justify-around">
-                    <img src="img/icon/tw.png" alt="">
-                    <img src="img/icon/ig.png" alt="">
-                    <img src="img/icon/tg.png" alt="">
-                    <img src="img/icon/matrix.png" alt="">
-                </div> <img src="img/icon/yt.png" alt="">
-                <img src="img/icon/git.png" alt="">
             </div>
-        </footer>
+    </section>
+
+    <section class="decred-hoy px-10">
+        <h2 class="text-4xl font-bold my-8">Decred hoy</h2>
+        <p>Últimos datos sobre la red y los mercados</p>
+        <div class="my-8">
+            <div>
+                <span class="text-xl">Precio del DCR</span>
+                <span class="text-2xl font-bold block">789,15 USD</span>
+                <hr class="my-4">
+            </div>
+            <div>
+                <span class="text-xl">Precio del Ticket</span>
+                <span class="text-2xl font-bold block">189,15 DCR</span>
+                <hr class="my-4">
+            </div>
+            <div>
+                <span class="text-xl">Transacciones 24hs</span>
+                <span class="text-2xl font-bold block">789.456.123 TXs</span>
+                <hr class="my-4">
+            </div>
+            <div>
+                <span class="text-xl">DCR Mezclado 24hs</span>
+                <span class="text-2xl font-bold block">789.456,42 DCR</span>
+                <hr class="my-4">
+            </div>
+            <div>
+                <span class="text-xl">Fondos en el Tesoro</span>
+                <span class="text-2xl font-bold block">124.123.123 USD</span>
+                <hr class="my-4">
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <footer class="text-gray-500 bg-decreddark px-8 py-4">
+        <div class="container mx-auto">
+            <img src="img/isologo.png" alt="">
+            <ul>
+                <li>Decred.org</li>
+                <li>Documentacion</li>
+                <li>Descargas</li>
+                <li>Comunidad</li>
+                <li>Contribuye</li>
+            </ul>
+            <div class="flex gap-4 items-center bg-decredgreen justify-around">
+                <img src="img/icon/tw.png" alt="">
+                <img src="img/icon/ig.png" alt="">
+                <img src="img/icon/tg.png" alt="">
+                <img src="img/icon/matrix.png" alt="">
+            </div> <img src="img/icon/yt.png" alt="">
+            <img src="img/icon/git.png" alt="">
+        </div>
+    </footer>
 
 
     </div>
