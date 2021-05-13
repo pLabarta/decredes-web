@@ -1,3 +1,5 @@
+const tailwindcss = require("tailwindcss")
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -18,6 +20,9 @@ module.exports = {
       inset: {
         '0': '0',
       },
+      backgroundImage: theme => ({
+        'cables': "url('/img/cables.png')",
+      }),
     },
   },
   variants: {
@@ -25,3 +30,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+
