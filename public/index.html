@@ -18,7 +18,7 @@
 
 
     <nav id="nav-overlay"
-        class="nav-overlay h-screen bg-white fixed w-2/3 text-decreddark flex flex-col justify-evenly shadow-2xl z-10">
+        class="nav-overlay h-screen bg-white fixed w-2/3 text-decreddark flex flex-col justify-evenly shadow-2xl z-20">
         <div class="w-full grid items-center">
             <button
                 class="py-4 mx-auto px-6 rounded border-decreddark border-2 text-2xl hover:bg-white text-decreddark focus:outline-none">Explorar
@@ -44,7 +44,7 @@
 
     <div id="all-content" class="filter">
 
-        <header class="fixed bg-white w-full h-16 grid items-center z-10 text-decreddark">
+        <header class="fixed bg-white w-full h-16 grid items-center z-20 text-decreddark">
             <nav class="">
                 <div class="container flex items-center justify-between mx-auto px-8 py-2">
 
@@ -273,7 +273,7 @@
                 </div>
 
             </div>
-            <div class="w-full grid items-center gap-4 my-8">
+            <div class="w-full grid items-center gap-4 my-8 lg:flex lg:w-1/3 lg:mx-auto ">
                 <a href="https://decred.org/wallets/" target="_blank" class="mx-auto">
                     <button
                         class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Ir
@@ -406,20 +406,21 @@
                 </li>
             </ul>
 
-            <div class="w-full grid items-center gap-4">
+        </div>
+        <div class="w-full grid items-center gap-4 lg:flex lg:w-1/2 lg:mx-auto">
 
-                <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
-                    <button
-                        class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Descarga
-                        DCRDEX</button>
-                </a>
-                <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
-                    class="mx-auto">
-                    <button
-                        class="py-4 mx-auto px-6 rounded-full text-2xl border-gray-500 border-2 hover:bg-white hover:text-decreddark focus:outline-none transition text-gray-300">Ver
-                        la guía de instalación</button>
-                </a>
-            </div>
+            <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
+                <button
+                    class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Descarga
+                    DCRDEX</button>
+            </a>
+            <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
+                class="mx-auto">
+                <button
+                    class="py-4 mx-auto px-6 rounded-full text-2xl border-gray-500 border-2 hover:bg-white hover:text-decreddark focus:outline-none transition text-gray-300">Ver
+                    la guía de instalación</button>
+            </a>
+        </div>
     </section>
 
     <section class="separador text-decreddark mt-5">
@@ -521,33 +522,38 @@
         </div>
     </section>
 
-    <section class="relative">
-        <div class="flex flex-col p-8 gap-8 background-difuminado bg-cables bg-center bg-cover">
-            <div class="flex items-center justify-between">
-                <img src="img/candado.png" alt="candado" class="h-16">
-                <h1 class=" text-4xl font-bold">Leete el coso!</h1>
+    <section class="relative my-16">
+        <div class="flex flex-row lg:max-w-4xl mx-auto">
+            <img src="img/cables.png" alt="cables" class="z-10 hidden lg:block lg:w-1/3">
+            <div
+                class="flex flex-col lg:justify-between lg:py-0 p-8 gap-8 background-difuminado bg-cables bg-center bg-cover lg:bg-decreddark lg:bg-none ">
+                <div class="flex items-center justify-between lg:justify-start lg:gap-4 lg:items-end">
+                    <img src="img/candado.png" alt="candado" class="h-16">
+                    <h1 class="text-4xl font-bold">Leete el coso!</h1>
+                </div>
+                <p>
+                    Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu
+                    DCR,
+                    usar
+                    <strong class="text-decredgreen font-semibold">la Lightning Network,</strong>
+                    acceder al sistema de Staking y participar de la DAO.
+                </p>
+                <p>
+                    Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu
+                    DCR,
+                    usar
+                    la Lightning Network,
+                    <strong class="text-decredgreen font-semibold">acceder al sistema de Staking</strong>
+                    y participar de la DAO.
+                </p>
+                <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
+                    <button
+                        class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Leer
+                        el artículo</button>
+                </a>
             </div>
-            <p>
-                Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR,
-                usar
-                <strong class="text-decredgreen font-semibold">la Lightning Network,</strong>
-                acceder al sistema de Staking y participar de la DAO.
-            </p>
-            <p>
-                Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR,
-                usar
-                la Lightning Network,
-                <strong class="text-decredgreen font-semibold">acceder al sistema de Staking</strong>
-                y participar de la DAO.
-            </p>
-            <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
-                <button
-                    class="py-4 mx-auto px-6 rounded-full text-2xl bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Leer
-                    el artículo</button>
-            </a>
+
         </div>
-
-
     </section>
 
     <section class="decred-hoy px-10">
