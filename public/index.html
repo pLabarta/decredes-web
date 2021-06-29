@@ -11,31 +11,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="bg-decreddark font-decred text-white">
+<body class="text-white bg-decreddark font-decred">
 
 
     <nav id="nav-overlay"
-        class="nav-overlay h-screen bg-white fixed w-2/3 text-decreddark flex flex-col justify-evenly shadow-2xl z-20">
-        <div class="w-full grid items-center">
+        class="fixed z-20 flex flex-col w-2/3 h-screen bg-white shadow-2xl nav-overlay text-decreddark justify-evenly">
+        <!-- <div class="grid items-center w-full">
             <button
-                class="py-4 mx-auto px-6 rounded border-decreddark border-2 text-2xl hover:bg-white text-decreddark focus:outline-none">Explorar
+                class="px-6 py-4 mx-auto text-2xl border-2 rounded border-decreddark hover:bg-white text-decreddark focus:outline-none">Explorar
                 DCR</button>
-        </div>
+        </div> -->
 
-        <ul class="flex flex-col text-2xl items-center gap-4">
-            <li>Seccion</li>
-            <li>Seccion</li>
-            <li>Seccion</li>
-            <li>Seccion</li>
-            <li>Seccion</li>
+        <ul class="flex flex-col items-center gap-4 text-2xl">
+            <li><a href="#iniciate" class="boton-nav" onclick="return closeNav();">Iníciate</a></li>
+            <li><a href="#billeteras" class="boton-nav" onclick="return closeNav();">Billeteras</a></li>
+            <li><a href="#exchanges" class="boton-nav" onclick="return closeNav();">Exchanges</a></li>
+            <li><a href="#staking" class="boton-nav" onclick="return closeNav();">Staking</a></li>
+            <li><a href="#lightning" class="boton-nav" onclick="return closeNav();">LN</a></li>
+            <li><a href="#privacidad" class="boton-nav" onclick="return closeNav();">Privacidad</a></li>
         </ul>
 
-        <ul class="flex flex-col text-2xl items-center gap-4">
+        <ul class="flex flex-col items-center gap-4 text-2xl">
             <span>DCR Hoy</span>
-            <hr class="w-3/4 border-1 border-decreddark mx-auto">
+            <hr class="w-3/4 mx-auto border-1 border-decreddark">
             <li>Precio:123</li>
             <li>Ticket:123</li>
             <li>Tesoro:123</li>
@@ -44,9 +51,9 @@
 
     <div id="all-content" class="filter">
 
-        <header class="fixed bg-white w-full h-16 grid items-center z-40 text-decreddark px-8 lg:px-0">
+        <header class="fixed z-40 grid items-center w-full h-16 px-8 bg-white text-decreddark lg:px-0">
             <nav class="">
-                <div class="container flex items-center justify-between mx-auto py-2">
+                <div class="container flex items-center justify-between py-2 mx-auto">
 
                     <a href="#">
                         <img class="h-8" src="img/isologo-dark.png" alt="">
@@ -66,8 +73,11 @@
                         <a href="#staking" class="transition hover:text-decredblue">
                             <li>Staking</li>
                         </a>
-                        <a href="#gobernanza" class="transition hover:text-decredblue">
-                            <li>Gobernanza</li>
+                        <a href="#exchanges" class="transition hover:text-decredblue">
+                            <li>Exchanges</li>
+                        </a>
+                        <a href="#lightning" class="transition hover:text-decredblue">
+                            <li>Lightning</li>
                         </a>
                         <a href="#privacidad" class="transition hover:text-decredblue">
                             <li>Privacidad</li>
@@ -75,7 +85,7 @@
                     </ul>
 
                     <button
-                        class="hidden lg:block bg-decreddark py-2 px-4 rounded-full border-decreddark border-2 text-md hover:bg-white text-white hover:text-decreddark transition focus:outline-none">Explorar
+                        class="hidden px-4 py-2 text-white transition border-2 rounded-full lg:block bg-decreddark border-decreddark text-md hover:bg-white hover:text-decreddark focus:outline-none">Explorar
                         DCR</button>
                 </div>
             </nav>
@@ -86,125 +96,126 @@
         <section class="relative flex items-center justify-center h-screen">
 
             <div class="absolute inset-1 background-difuminado-video1">
-                <video autoplay loop muted class="w-full h-full object-cover">
+                <video autoplay loop muted class="object-cover w-full h-full">
                     <source src="img/vid/decred-fond2.mp4" type="video/mp4" />
                 </video>
             </div>
 
             <div class="absolute px-10">
                 <img src="img/logo-transparent.png" alt="" class="mx-auto">
-                <h1 class="text-center text-4xl font-bold mb-8">Conoce Decred</h1>
-                <p class="relative text-center text-xl mb-8">Decred es una moneda digital autónoma y descentralizada,
+                <h1 class="mb-8 text-4xl font-bold text-center">Conoce Decred</h1>
+                <p class="relative mb-8 text-xl text-center">Decred es una moneda digital autónoma y descentralizada,
                     dirigida
                     por su
                     comunidad
                 </p>
-                <div class="w-full grid items-center">
+                <div class="grid items-center w-full">
                     <button
-                        class="py-4 mx-auto px-6 rounded-full border-white border-2 text-2xl hover:bg-white hover:text-decreddark focus:outline-none transition">Explorar
+                        class="px-6 py-4 mx-auto text-2xl transition border-2 border-white rounded-full hover:bg-white hover:text-decreddark focus:outline-none">Explorar
                         DCR</button>
                 </div>
             </div>
 
         </section>
 
-        <section class="container mx-auto my-16">
+        <section class="container mx-auto my-16" id="iniciate">
             <div
-                class="iniciate px-10 lg:px-0 flex flex-col-reverse lg:flex-row  mx-auto items-center my-16 lg:justify-between gap-4 max-w-5xl">
+                class="flex flex-col-reverse items-center max-w-5xl gap-4 px-10 mx-auto my-16 iniciate lg:px-0 lg:flex-row lg:justify-between">
                 <div class="flex flex-col">
-                    <h2 class="text-4xl font-bold mb-4">Iníciate</h2>
-                    <p>Decred en Español es tu guía para el ecosistema de DCR.<br class="hidden lg:block"> La tecnología
+                    <h2 class="mb-4 text-4xl font-bold" data-aos="fade-up">Iníciate</h2>
+                    <p data-aos="fade-up">Decred en Español es tu guía para el ecosistema de DCR.<br
+                            class="hidden lg:block"> La tecnología
                         siempre está cambiando. Te recomendamos<br class="hidden lg:block"> empezar por uno de estos
                         temas:</p>
                 </div>
-                <img src="img/iniciate.png" alt="" class="w-full md:w-1/2 lg:w-1/3">
+                <img src="img/iniciate.png" alt="" data-aos="fade-left" class="w-full md:w-1/2 lg:w-1/3">
             </div>
 
 
 
             <!-- CARDS -->
             <div
-                class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center lg:px-0 p-8 max-w-5xl mx-auto">
-                <div class="card  overflow-hidden rounded-2xl overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                class="grid justify-center max-w-5xl grid-cols-1 gap-8 p-8 mx-auto cards md:grid-cols-2 lg:grid-cols-3 lg:px-0">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="150">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/billetera.png" alt="" class="mx-auto h-2/3">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Elige una billetera</span>
-                        <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
-                            Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
+                        <span class="block mt-4">Recomendamos usar billeteras de código abierto. Decred financia el
+                            desarrollo de billeteras para toda clase de equipos. Elegí la tuya.</span>
                     </div>
                 </div>
 
-                <div class="card  overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="300">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/obtene.png" alt="" class="mx-auto h-1/2">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Obtiene DCR</span>
-                        <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
-                            Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
+                        <span class="block mt-4">El primer paso para participar de la comunidad es obtener Decred.
+                            Consulta el listado de exchanges que soportan DCR.</span>
                     </div>
                 </div>
-                <div class="card  overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="450">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/manos.png" alt="" class="mx-auto h-1/2">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Participa del Staking</span>
-                        <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
-                            Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
+                        <span class="block mt-4">Decred cuenta con un sistema de Proof-of-Stake. Para participar debes
+                            congelar DCR a cambio de tickets. Conoce más aquí.</span>
                     </div>
                 </div>
-                <div class="card  overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="150">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/dex.png" alt="" class="mx-auto h-3/4">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Conoce DCRDEX</span>
                         <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
                             Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
                     </div>
                 </div>
-                <div class="card  overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="200">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/lightning.png" alt="" class="mx-auto h-1/2">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Usa la Lightning Network</span>
-                        <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
-                            Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
+                        <span class="block mt-4">La red Lightning es una solución de segunda capa para facilitar pagos
+                            pequeños y microtransacciones. Accede a la guía completa.</span>
                     </div>
                 </div>
-                <div class="card  overflow-hidden rounded-2xl">
-                    <div class="imagen bg-blue-200 flex items-center h-48">
+                <div class="overflow-hidden card rounded-2xl" data-aos="flip-left" data-aos-offset="300">
+                    <div class="flex items-center h-48 bg-blue-200 imagen">
                         <img src="img/card/privacy.png" alt="" class="mx-auto h-1/2">
                     </div>
-                    <div class="desc bg-white text-decreddark p-6 lg:h-48 flex flex-col justify-start">
+                    <div class="flex flex-col justify-start p-6 bg-white desc text-decreddark lg:h-48">
                         <span class="text-2xl font-semibold">Aprende sobre Privacidad</span>
-                        <span class="block mt-4">Decred desarrolló una casa de cambio de criptomonedas descentralizada.
-                            Puedes cambiar DCR por BTC sin ceder el control de tus fondos.</span>
+                        <span class="block mt-4">DCR es una criptomoneda pseudonima, pero la blockchain es
+                            completamente transparente. Aprende cómo usar las soluciones de privacidad de Decred.</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-decreddark md:h-screen grid items-center max-w-5xl mx-auto px-8 lg:px-0">
-            <h2 class="text-4xl text-center mt-16 font-bold ">Billeteras</h2>
-            <h3 class="text-lg text-center mt-4 mb-8">La cartera de escritorio Decrediton tiene todo lo necesario para
-                gestionar tu DCR, usar la Lightning Network, acceder al sistema de Staking y participar de la DAO.</h3>
+        <section class="grid items-center max-w-5xl px-8 mx-auto bg-decreddark md:h-screen lg:px-0" id="billeteras">
+            <h2 class="mt-16 text-4xl font-bold text-center ">Billeteras</h2>
+            <h3 class="mx-auto mt-4 mb-8 text-lg text-center lg:max-w-lg">Recomendamos usar billeteras de código
+                abierto. Decred financia el desarrollo de billeteras para toda clase de equipos. Elegí la tuya.</h3>
 
 
 
-            <div class="wallets flex lg:grid lg:grid-cols-2 flex-col container mx-auto gap-4">
-                <div class="wallet flex flex-col md:grid md:grid-cols-4 gap-4 py-4 lg:col-span-2">
-                    <div class="only-imagen pt-0 col-span-3">
+            <div class="container flex flex-col gap-4 mx-auto wallets lg:grid lg:grid-cols-2">
+                <div class="flex flex-col gap-4 py-4 wallet md:grid md:grid-cols-4 lg:col-span-2">
+                    <div class="col-span-3 pt-0 only-imagen" data-aos="fade-right">
                         <img src="img/decrediton.png" alt="wallet" />
                     </div>
 
-                    <div class="detalles col-span-1">
-                        <span class="uppercase text-sm">recomendada</span>
-                        <div class="mas-detalles flex justify-between  items-center mb-4">
+                    <div class="col-span-1 detalles" data-aos="fade-left" data-aos-offset="400">
+                        <span class="text-sm uppercase">recomendada</span>
+                        <div class="flex items-center justify-between mb-4 mas-detalles">
                             <span class="text-xl font-bold">Decrediton</span>
                             <img src="img/icon/desktop.png" alt="desktop" class="h-8">
                         </div>
@@ -213,50 +224,50 @@
                     </div>
                 </div>
 
-                <div class="wallet grid grid-cols-4 gap-4 py-4 lg:col-span-1">
-                    <div class="only-imagen pt-0">
+                <div class="grid grid-cols-4 gap-4 py-4 wallet lg:col-span-1">
+                    <div class="pt-0 only-imagen" data-aos="fade-right" data-aos-offset="300">
                         <img src="img/icon/wallet.png" alt="wallet" />
                     </div>
 
-                    <div class="detalles col-span-3">
-                        <span class="uppercase text-sm">recomendada</span>
-                        <div class="mas-detalles flex justify-between  items-center mb-4">
-                            <span class="text-xl font-bold">Decrediton</span>
+                    <div class="col-span-3 detalles" data-aos="fade-up" data-aos-offset="300">
+                        <span class="text-sm uppercase">mobile</span>
+                        <div class="flex items-center justify-between mb-4 mas-detalles">
+                            <span class="text-xl font-bold">Android/iOS</span>
                             <img src="img/icon/mobile.png" alt="mobile" class="h-8">
                         </div>
-                        <p>La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR, usar la
-                            Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
+                        <p>Decred desarrolla billeteras para dispositivos móviles con sistema operativo Android o iOS.
+                            Estas no cuentan con soporte para staking.</p>
                     </div>
                 </div>
 
-                <div class="wallet grid grid-cols-4 gap-4 py-4 lg:col-span-1">
-                    <div class="only-imagen pt-0">
+                <div class="grid grid-cols-4 gap-4 py-4 wallet lg:col-span-1" data-aos="fade-up">
+                    <div class="pt-0 only-imagen" data-aos="fade-right" data-aos-offset="300">
                         <img src="img/icon/cli.png" alt="cli" />
                     </div>
 
-                    <div class="detalles col-span-3">
-                        <span class="uppercase text-sm">recomendada</span>
-                        <div class="mas-detalles flex justify-between  items-center mb-4">
-                            <span class="text-xl font-bold">Decrediton</span>
+                    <div class="col-span-3 detalles" data-aos="fade-up" data-aos-offset="300">
+                        <span class="text-sm uppercase">Avanzada</span>
+                        <div class="flex items-center justify-between mb-4 mas-detalles">
+                            <span class="text-xl font-bold">Línea de comandos</span>
                             <img src="img/icon/desktop.png" alt="desktop" class="h-8">
                         </div>
-                        <p>La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR, usar la
-                            Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
+                        <p>La billetera de línea de comandos de Decred se mantiene actualizada con las últimas
+                            mejoras. Se recomienda que solo usuarios avanzados o desarrolladores la usen.</p>
                     </div>
                 </div>
 
             </div>
-            <div class="w-full grid items-center gap-4 my-8 lg:flex lg:w-1/3 lg:mx-auto ">
+            <div class="grid items-center w-full gap-4 my-8 lg:flex lg:w-1/3 lg:mx-auto ">
                 <a href="https://decred.org/wallets/" target="_blank" class="mx-auto">
                     <button
-                        class="py-4 mx-auto px-6 rounded-full text-md font-semibold bg-decredblue border-decredblue border-2 hover:bg-white hover:border-white hover:text-decreddark focus:outline-none transition">Ir
+                        class="px-6 py-4 mx-auto font-semibold transition border-2 rounded-full text-md bg-decredblue border-decredblue hover:bg-white hover:border-white hover:text-decreddark focus:outline-none">Ir
                         a las descargas</button>
                 </a>
 
                 <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
                     class="mx-auto">
                     <button
-                        class="py-4 mx-auto px-6 rounded-full text-md font-semibold border-white border-2 hover:bg-white hover:text-decreddark focus:outline-none transition">Aprende
+                        class="px-6 py-4 mx-auto font-semibold transition border-2 border-white rounded-full text-md hover:bg-white hover:text-decreddark focus:outline-none">Aprende
                         más</button>
                 </a>
             </div>
@@ -264,22 +275,22 @@
 
         </section>
 
-        <section class="relative flex items-center justify-center h-screen px-8 lg:px-0">
+        <section class="relative flex items-center justify-center h-screen px-8 lg:px-0" id="exchanges">
 
             <div class="absolute inset-1 background-difuminado-video2">
-                <video autoplay loop muted class="w-full h-full object-cover">
+                <video autoplay loop muted class="object-cover w-full h-full">
                     <source src="img/vid/exchange2.mp4" type="video/mp4" />
                 </video>
             </div>
 
-            <div
-                class="absolute px-10 border-2 rounded-2xl text-center p-16 lg:py-32 lg:max-w-5xl mx-auto sm:mx-0 z-10">
-                <h1 class="text-center text-4xl font-bold mt-2">Obtiene Decred</h1>
+            <div class="absolute z-10 p-16 px-10 mx-auto text-center border-2 rounded-2xl lg:py-32 lg:max-w-5xl sm:mx-0"
+                data-aos="zoom-in" data-aos-offset="500">
+                <h1 class="mt-2 text-4xl font-bold text-center">Obtiene Decred</h1>
 
 
-                <div class="grid grid-cols-1 mt-8 gap-4 container lg:max-w-4xl items-center">
+                <div class="container grid items-center grid-cols-1 gap-4 mt-8 lg:max-w-4xl">
 
-                    <p class="relative text-xl mb-8">Las casas de cambio de monedas digitales
+                    <p class="relative mb-8 text-xl">Las casas de cambio de monedas digitales
                         permiten
                         comprar e
                         intercambiar Decred (DCR) fácilmente. Recuerda siempre hacer tu propia investigación antes de
@@ -289,10 +300,10 @@
                         privadas.
                     </p>
 
-                    <div class="w-full grid items-center">
+                    <div class="grid items-center w-full">
                         <a href="https://decred.org/exchanges/" target="_blank">
                             <button
-                                class="py-4 mt-4 mx-auto px-6 rounded-full border-white border-2 text-md font-semibold hover:bg-white hover:text-decreddark focus:outline-none transition">Ver
+                                class="px-6 py-4 mx-auto mt-4 font-semibold transition border-2 border-white rounded-full text-md hover:bg-white hover:text-decreddark focus:outline-none">Ver
                                 exchanges</button>
                         </a>
                     </div>
@@ -300,273 +311,280 @@
             </div>
 
         </section>
-    </div>
 
 
-    <section id="dcrdex" class="container mx-auto my-16 max-w-5xl">
-        <div class="px-8">
-            <div
-                class="flex lg:justify-start gap-4 lg:flex-row-reverse lg:px-32 lg:w-3/4 mx-auto items-center flex-col">
-                <!-- <img src="img/dcr-dex.png" alt="dex" class="mx-auto md:h-64 h-48" /> -->
-                <div>
-                    <div class="flex items-center justify-center lg:justify-start lg:justify-center lg:gap-4">
-                        <img src="img/dcr-dex.png" alt="candado" class="h-24">
-                        <h1 class="text-4xl font-bold">DCRDEX</h1>
+
+        <section id="dcrdex" class="container max-w-5xl mx-auto my-16">
+            <div class="px-8">
+                <div
+                    class="flex flex-col items-center gap-4 mx-auto lg:justify-start lg:flex-row-reverse lg:px-32 lg:w-3/4">
+                    <!-- <img src="img/dcr-dex.png" alt="dex" class="h-48 mx-auto md:h-64" /> -->
+                    <div>
+                        <div class="flex items-center justify-center lg:justify-start lg:justify-center lg:gap-4">
+                            <img src="img/dcr-dex.png" alt="candado" class="h-24">
+                            <h1 class="text-4xl font-bold">DCRDEX</h1>
+                        </div>
+                        <p class="mx-auto my-8 text-center lg:w-3/4">La cartera de escritorio Decrediton tiene todo lo
+                            necesario
+                            para
+                            gestionar tu
+                            DCR,
+                            usar la Lightning
+                            Network, acceder al sistema de Staking y participar de la DAO.</p>
                     </div>
-                    <p class="my-8 lg:w-3/4 text-center mx-auto">La cartera de escritorio Decrediton tiene todo lo
-                        necesario
-                        para
-                        gestionar tu
-                        DCR,
-                        usar la Lightning
-                        Network, acceder al sistema de Staking y participar de la DAO.</p>
                 </div>
+
+                <div class="flex flex-col mb-4 text-center md:flex-row md:text-left">
+                    <ul
+                        class="flex flex-col gap-4 mx-auto my-8 lg:justify-evenly md:px-8 md:mx-auto md:w-3/4 lg:w-2/3 lg:my-16 lg:items-center">
+                        <li>
+                            <div class="flex items-center">
+                                <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
+                                <h3 class="text-2xl">You stay in control of your money.</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
+                                <h3 class="text-2xl">You stay in control of your money.</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
+                                <h3 class="text-2xl">You stay in control of your money.</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
+                                <h3 class="text-2xl">You stay in control of your money.</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
+                                <h3 class="text-2xl">You stay in control of your money.</h3>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                    <img src="img/dcrdex-preview.png" alt="dcrdex preview" class="w-full md:w-2/3">
+                </div>
+
             </div>
+            <div class="grid items-center w-full gap-4 lg:flex lg:w-1/2 lg:mx-auto">
 
-            <div class="flex flex-col md:flex-row text-center md:text-left mb-4">
-                <ul
-                    class="flex flex-col my-8 gap-4 lg:justify-evenly md:px-8 md:mx-auto md:w-3/4 lg:w-2/3 lg:my-16 lg:items-center mx-auto">
-                    <li>
-                        <div class="flex items-center">
-                            <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
-                            <h3 class="text-2xl">You stay in control of your money.</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
-                            <h3 class="text-2xl">You stay in control of your money.</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
-                            <h3 class="text-2xl">You stay in control of your money.</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
-                            <h3 class="text-2xl">You stay in control of your money.</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <!-- <img src="img/line-hor.png" class="w-12 md:w-16" /> -->
-                            <h3 class="text-2xl">You stay in control of your money.</h3>
-                        </div>
-                    </li>
-
-
-
-                </ul>
-                <img src="img/dcrdex-preview.png" alt="dcrdex preview" class="w-full md:w-2/3">
-            </div>
-
-        </div>
-        <div class="w-full grid items-center gap-4 lg:flex lg:w-1/2 lg:mx-auto">
-
-            <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
-                <button
-                    class="py-4 mx-auto px-6 rounded-full text-md font-semibold bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Descarga
-                    DCRDEX</button>
-            </a>
-            <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
-                class="mx-auto">
-                <button
-                    class="py-4 mx-auto px-6 rounded-full text-md font-semibold border-white border-2 hover:bg-white hover:text-decreddark focus:outline-none transition text-gray-300">Ver
-                    la guía de instalación</button>
-            </a>
-        </div>
-    </section>
-
-    <!-- <hr class="mx-8"> -->
-
-    <section
-        class="container max-w-5xl mx-auto md:grid md:grid-cols-2 md:grid-rows-2 md:justify-center px-8 lg:px-0  space-y-8 py-16">
-        <img src="img/stakeymoney.png" alt="stakey"
-            class="md:mr-0 md:ml-auto md:h-80 w-80 md:row-start-3 md:row-span-4 md:col-start-2 md:col-end-3 md:mb-0 md:mt-auto mx-auto">
-        <h1 class="text-4xl font-bold my-8 text-center md:col-span-2">Cómo hacer Staking de DCR</h1>
-        <p class="md:col-span-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis deserunt
-            numquam expedita
-            nullaW
-            dicta!
-        </p>
-
-        <ol class="space-y-4 md:col-span-1">
-            <li class="flex gap-4 align-text-top">
-                <span class="flex justify-center items-center p-2 bg-decredblue rounded-3xl w-6 h-6">1</span>
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold">Nombre del Paso</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem ut itaque!</p>
-                </div>
-            </li>
-            <li class="flex gap-4 align-text-top">
-                <span class="flex justify-center items-center p-2 bg-decredblue rounded-3xl w-6 h-6">2</span>
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold">Nombre del Paso</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur <strong class="text-decredgreen font-semibold">adipisicing
-                            elit.</strong> Suscipit rem ut itaque!</p>
-                </div>
-            </li>
-            <li class="flex gap-4 align-text-top">
-                <span class="flex justify-center items-center p-2 bg-decredblue rounded-3xl w-6 h-6">3</span>
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold">Nombre del Paso</h2>
-                    <p>Lorem ipsum dolor sit amet <strong class="text-decredgreen font-semibold">adipisicing
-                            elit.</strong> adipisicing elit. Suscipit rem ut itaque!</p>
-                </div>
-            </li>
-            <li class="flex gap-4 align-text-top">
-                <span class="flex justify-center items-center p-2 bg-decredblue rounded-3xl w-6 h-6">4</span>
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold">Nombre del Paso</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong
-                            class="text-decredgreen font-semibold">adipisicing
-                            elit.</strong> rem ut itaque!</p>
-                </div>
-            </li>
-            <li class="flex gap-4 align-text-top">
-                <span class="flex justify-center items-center p-2 bg-decredblue rounded-3xl w-6 h-6">5</span>
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold">Nombre del Paso</h2>
-                    <p>Lorem ipsum dolor sit amet <strong class="text-decredgreen font-semibold">adipisicing
-                            elit.</strong> adipisicing elit. Suscipit rem ut itaque!</p>
-                </div>
-            </li>
-
-        </ol>
-    </section>
-
-    <section
-        class="container max-w-5xl mx-auto md:justify-center md:px-16 flex flex-col p-8 gap-8 lg:px-0 h-screen md:my-48">
-        <div class="flex items-center justify-between md:justify-start md:gap-8">
-            <img src="img/icon/rayo.png" alt="rayo" class="h-16">
-            <h1 class="text-4xl font-bold">Enchúfate a la <br class="md:hidden"> Red Lightning</h1>
-        </div>
-
-        <img src="img/lightningwallet.png" alt="lightning wallet" class="w-3/4 mx-auto">
-
-        <p class="">Descripcion del paso La cartera de escritorio Decrediton <strong
-                class="text-decredgreen font-semibold ">adipisicing
-                elit.</strong>, usar
-            la Lightning Network, acceder al sistema de Staking y participar de la DAO.
-            Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR, usar
-            la Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
-        <p class="">Descripcion del paso La cartera de escritorio Decrediton tiene <strong
-                class="text-decredgreen font-semibold">adipisicing
-                elit.</strong>, usar
-            la Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
-
-        <div class="flex flex-col md:flex-row md:justify-center gap-4 md:gap-12 md:mx-auto">
-            <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
-                <button
-                    class="py-4 mx-auto px-6 rounded-full text-md font-semibold bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Lee
-                    la guía completa</button>
-            </a>
-            <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
-                class="mx-auto">
-                <button
-                    class="py-4 mx-auto px-6 rounded-full text-md font-semibold border-white border-2 hover:bg-white hover:text-decreddark focus:outline-none transition text-gray-300">Ir
-                    a Billeteras</button>
-            </a>
-
-        </div>
-    </section>
-
-    <section class="relative my-16 md:h-screen">
-        <div class="flex flex-row lg:max-w-5xl mx-auto lg:justify-between">
-            <img src="img/cables.png" alt="cables" class="z-10 hidden lg:block lg:w-full">
-            <div
-                class="flex flex-col lg:justify-start lg:py-0 p-8 gap-8 background-difuminado bg-cables bg-center bg-cover lg:bg-decreddark lg:bg-none">
-                <div class="flex items-center justify-between lg:justify-start lg:gap-4 lg:items-end z-20">
-                    <img src="img/candado.png" alt="candado" class="h-16">
-                    <h1 class="text-4xl font-bold">Leete el coso!</h1>
-                </div>
-                <p class="">
-                    Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu
-                    DCR,
-                    usar
-                    <strong class="text-decredgreen font-semibold">la Lightning Network,</strong>
-                    acceder al sistema de Staking y participar de la DAO.
-                </p>
-                <p>
-                    Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu
-                    DCR,
-                    usar
-                    la Lightning Network,
-                    <strong class="text-decredgreen font-semibold">acceder al sistema de Staking</strong>
-                    y participar de la DAO.
-                </p>
-                <a href="https://dex.decred.org/" target="_blank" class="">
+                <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
                     <button
-                        class="py-4 mx-auto px-6 rounded-full text-md font-semibold bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none transition">Leer
-                        el artículo</button>
+                        class="px-6 py-4 mx-auto font-semibold transition rounded-full text-md bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none">Descarga
+                        DCRDEX</button>
+                </a>
+                <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
+                    class="mx-auto">
+                    <button
+                        class="px-6 py-4 mx-auto font-semibold text-gray-300 transition border-2 border-white rounded-full text-md hover:bg-white hover:text-decreddark focus:outline-none">Ver
+                        la guía de instalación</button>
                 </a>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- <hr class="mx-8"> -->
 
-    <section class="decred-hoy px-10 lg:px-0 lg:max-w-5xl lg:mx-auto my-16 h-screen">
-        <h2 class="text-4xl  font-bold my-8">Decred hoy</h2>
-        <p>Últimos datos sobre la red y los mercados</p>
-        <div class="my-8">
-            <div>
-                <span class="text-xl">Precio del DCR</span>
-                <span class="text-2xl font-bold block">789,15 USD</span>
-                <hr class="my-4">
-            </div>
-            <div>
-                <span class="text-xl">Precio del Ticket</span>
-                <span class="text-2xl font-bold block">189,15 DCR</span>
-                <hr class="my-4">
-            </div>
-            <div>
-                <span class="text-xl">Transacciones 24hs</span>
-                <span class="text-2xl font-bold block">789.456.123 TXs</span>
-                <hr class="my-4">
-            </div>
-            <div>
-                <span class="text-xl">DCR Mezclado 24hs</span>
-                <span class="text-2xl font-bold block">789.456,42 DCR</span>
-                <hr class="my-4">
-            </div>
-            <div>
-                <span class="text-xl">Fondos en el Tesoro</span>
-                <span class="text-2xl font-bold block">124.123.123 USD</span>
-                <!-- <hr class="my-4"> -->
-            </div>
-        </div>
-    </section>
+        <section
+            class="container max-w-5xl px-8 py-16 mx-auto md:grid md:grid-cols-2 md:grid-rows-2 md:justify-center lg:px-0 space-y-8"
+            id="staking">
+            <img src="img/stakeymoney.png" alt="stakey"
+                class="mx-auto md:mr-0 md:ml-auto md:h-80 w-80 md:row-start-3 md:row-span-4 md:col-start-2 md:col-end-3 md:mb-0 md:mt-auto">
+            <h1 class="my-8 text-4xl font-bold text-center md:col-span-2">Cómo hacer Staking de DCR</h1>
+            <p class="text-center md:col-span-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis deserunt
+                numquam expedita
+                nullaW
+                dicta!
+            </p>
 
-    <hr>
-    <footer class="text-gray-500 container bg-decreddark px-8 lg:p-0 py-4 mx-auto my-16">
+            <ol class="space-y-4 md:col-span-1">
+                <li class="flex gap-4 align-text-top">
+                    <span class="flex items-center justify-center w-6 h-6 p-2 bg-decredblue rounded-3xl">1</span>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold">Nombre del Paso</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem ut itaque!</p>
+                    </div>
+                </li>
+                <li class="flex gap-4 align-text-top">
+                    <span class="flex items-center justify-center w-6 h-6 p-2 bg-decredblue rounded-3xl">2</span>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold">Nombre del Paso</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <strong
+                                class="font-semibold text-decredgreen">adipisicing
+                                elit.</strong> Suscipit rem ut itaque!</p>
+                    </div>
+                </li>
+                <li class="flex gap-4 align-text-top">
+                    <span class="flex items-center justify-center w-6 h-6 p-2 bg-decredblue rounded-3xl">3</span>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold">Nombre del Paso</h2>
+                        <p>Lorem ipsum dolor sit amet <strong class="font-semibold text-decredgreen">adipisicing
+                                elit.</strong> adipisicing elit. Suscipit rem ut itaque!</p>
+                    </div>
+                </li>
+                <li class="flex gap-4 align-text-top">
+                    <span class="flex items-center justify-center w-6 h-6 p-2 bg-decredblue rounded-3xl">4</span>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold">Nombre del Paso</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong
+                                class="font-semibold text-decredgreen">adipisicing
+                                elit.</strong> rem ut itaque!</p>
+                    </div>
+                </li>
+                <li class="flex gap-4 align-text-top">
+                    <span class="flex items-center justify-center w-6 h-6 p-2 bg-decredblue rounded-3xl">5</span>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold">Nombre del Paso</h2>
+                        <p>Lorem ipsum dolor sit amet <strong class="font-semibold text-decredgreen">adipisicing
+                                elit.</strong> adipisicing elit. Suscipit rem ut itaque!</p>
+                    </div>
+                </li>
 
-        <div class="container mx-auto flex flex-col w-full">
-            <img src="img/isologo.png" alt="" class="w-1/2 mx-auto lg:w-48">
-            <hr class="mt-8 lg:hidden">
-            <ul class="mt-8 text-center flex flex-col gap-2 lg:gap-16 lg:flex-row lg:justify-center">
-                <li>Decred.org</li>
-                <li>Documentacion</li>
-                <li>Descargas</li>
-                <li>Comunidad</li>
-                <li>Contribuye</li>
-            </ul>
-            <div class="grid grid-cols-4 items-center mx-auto gap-8 my-8 lg:grid-cols-8 lg:gap-24">
-                <img src="img/icon2/tw.png" alt="" class="w-8">
-                <img src="img/icon2/ig.png" alt="" class="w-8">
-                <img src="img/icon2/tg.png" alt="" class="w-8">
-                <img src="img/icon2/matrix.png" alt="" class="w-8">
-                <img src="img/icon2/yt.png" alt="" class="w-8">
-                <img src="img/icon2/git.png" alt="" class="w-8">
-                <img src="img/icon2/dd.png" alt="" class="w-8">
-                <img src="img/icon2/md.png" alt="" class="w-8">
+            </ol>
+        </section>
+
+        <section
+            class="container flex flex-col h-screen max-w-5xl gap-8 p-8 mx-auto md:justify-center md:px-16 lg:px-0 md:my-48"
+            id="lightning">
+            <div class="flex items-center justify-between md:justify-start md:gap-8">
+                <img src="img/icon/rayo.png" alt="rayo" class="h-16">
+                <h1 class="text-4xl font-bold">Enchúfate a la <br class="md:hidden"> Red Lightning</h1>
             </div>
-        </div>
-    </footer>
+
+            <img src="img/lightningwallet.png" alt="lightning wallet" class="w-3/4 mx-auto">
+
+            <p class="">Descripcion del paso La cartera de escritorio Decrediton <strong
+                    class="font-semibold text-decredgreen ">adipisicing
+                    elit.</strong>, usar
+                la Lightning Network, acceder al sistema de Staking y participar de la DAO.
+                Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar tu DCR,
+                usar
+                la Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
+            <p class="">Descripcion del paso La cartera de escritorio Decrediton tiene <strong
+                    class="font-semibold text-decredgreen">adipisicing
+                    elit.</strong>, usar
+                la Lightning Network, acceder al sistema de Staking y participar de la DAO.</p>
+
+            <div class="flex flex-col gap-4 md:flex-row md:justify-center md:gap-12 md:mx-auto">
+                <a href="https://dex.decred.org/" target="_blank" class="mx-auto">
+                    <button
+                        class="px-6 py-4 mx-auto font-semibold transition rounded-full text-md bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none">Lee
+                        la guía completa</button>
+                </a>
+                <a href="https://docs.decred.org/getting-started/beginner-guide/#beginners-guide" target="_blank"
+                    class="mx-auto">
+                    <button
+                        class="px-6 py-4 mx-auto font-semibold text-gray-300 transition border-2 border-white rounded-full text-md hover:bg-white hover:text-decreddark focus:outline-none">Ir
+                        a Billeteras</button>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="relative my-16 md:h-screen" id="privacidad">
+            <div class="flex flex-row mx-auto lg:max-w-5xl lg:justify-between">
+                <img src="img/cables.png" alt="cables" class="z-10 hidden lg:block lg:w-full">
+                <div
+                    class="flex flex-col gap-8 p-8 bg-center bg-cover lg:justify-start lg:py-0 background-difuminado bg-cables lg:bg-decreddark lg:bg-none">
+                    <div class="z-20 flex items-center justify-between lg:justify-start lg:gap-4 lg:items-end">
+                        <img src="img/candado.png" alt="candado" class="h-16">
+                        <h1 class="text-4xl font-bold">Leete el coso!</h1>
+                    </div>
+                    <p class="">
+                        Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar
+                        tu
+                        DCR,
+                        usar
+                        <strong class="font-semibold text-decredgreen">la Lightning Network,</strong>
+                        acceder al sistema de Staking y participar de la DAO.
+                    </p>
+                    <p>
+                        Descripcion del paso La cartera de escritorio Decrediton tiene todo lo necesario para gestionar
+                        tu
+                        DCR,
+                        usar
+                        la Lightning Network,
+                        <strong class="font-semibold text-decredgreen">acceder al sistema de Staking</strong>
+                        y participar de la DAO.
+                    </p>
+                    <a href="https://dex.decred.org/" target="_blank" class="">
+                        <button
+                            class="px-6 py-4 mx-auto font-semibold transition rounded-full text-md bg-decredblue hover:bg-white hover:text-decreddark focus:outline-none">Leer
+                            el artículo</button>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="h-screen px-10 my-16 decred-hoy lg:px-0 lg:max-w-5xl lg:mx-auto">
+            <h2 class="my-8 text-4xl font-bold">Decred hoy</h2>
+            <p>Últimos datos sobre la red y los mercados</p>
+            <div class="my-8">
+                <div>
+                    <span class="text-xl">Precio del DCR</span>
+                    <span class="block text-2xl font-bold">789,15 USD</span>
+                    <hr class="my-4">
+                </div>
+                <div>
+                    <span class="text-xl">Precio del Ticket</span>
+                    <span class="block text-2xl font-bold">189,15 DCR</span>
+                    <hr class="my-4">
+                </div>
+                <div>
+                    <span class="text-xl">Transacciones 24hs</span>
+                    <span class="block text-2xl font-bold">789.456.123 TXs</span>
+                    <hr class="my-4">
+                </div>
+                <div>
+                    <span class="text-xl">DCR Mezclado 24hs</span>
+                    <span class="block text-2xl font-bold">789.456,42 DCR</span>
+                    <hr class="my-4">
+                </div>
+                <div>
+                    <span class="text-xl">Fondos en el Tesoro</span>
+                    <span class="block text-2xl font-bold">124.123.123 USD</span>
+                    <!-- <hr class="my-4"> -->
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <footer class="container px-8 py-4 mx-auto my-16 text-gray-500 bg-decreddark lg:p-0">
+
+            <div class="container flex flex-col w-full mx-auto">
+                <img src="img/isologo.png" alt="" class="w-1/2 mx-auto lg:w-48">
+                <hr class="mt-8 lg:hidden">
+                <ul class="flex flex-col gap-2 mt-8 text-center lg:gap-16 lg:flex-row lg:justify-center">
+                    <li>Decred.org</li>
+                    <li>Documentacion</li>
+                    <li>Descargas</li>
+                    <li>Comunidad</li>
+                    <li>Contribuye</li>
+                </ul>
+                <div class="grid items-center grid-cols-4 gap-8 mx-auto my-8 lg:grid-cols-8 lg:gap-24">
+                    <img src="img/icon2/tw.png" alt="" class="w-8">
+                    <img src="img/icon2/ig.png" alt="" class="w-8">
+                    <img src="img/icon2/tg.png" alt="" class="w-8">
+                    <img src="img/icon2/matrix.png" alt="" class="w-8">
+                    <img src="img/icon2/yt.png" alt="" class="w-8">
+                    <img src="img/icon2/git.png" alt="" class="w-8">
+                    <img src="img/icon2/dd.png" alt="" class="w-8">
+                    <img src="img/icon2/md.png" alt="" class="w-8">
+                </div>
+            </div>
+        </footer>
 
 
+    </div>
     </div>
 </body>
 
