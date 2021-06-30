@@ -17,7 +17,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
     <script defer src="js/script.js"></script>
+    <script defer src="js/dcrdata.js"></script>
 </head>
 
 <body class="text-white bg-decreddark font-decred">
@@ -43,9 +45,14 @@
         <ul class="flex flex-col items-center gap-4 text-2xl">
             <span>DCR Hoy</span>
             <hr class="w-3/4 mx-auto border-1 border-decreddark">
-            <li>Precio:123</li>
-            <li>Ticket:123</li>
-            <li>Tesoro:123</li>
+            <li>
+                Precio DCR:
+            </li>
+            <li id="priceMobile"></li>
+            <li>
+                Precio Ticket:
+            </li>
+            <li id="ticketMobile"></li>
         </ul>
     </nav>
 
@@ -446,7 +453,7 @@
         </section>
 
         <section
-            class="container flex flex-col h-screen max-w-5xl gap-8 p-8 mx-auto md:justify-center md:px-16 lg:px-0 md:my-48"
+            class="container flex flex-col h-screen max-w-5xl gap-8 p-8 mx-auto md:justify-center md:px-16 lg:px-0 md:my-24"
             id="lightning" data-aos="flip-down" data-aos-offset="400">
             <div class="flex items-center justify-between md:justify-start md:gap-8">
                 <img src="img/icon/rayo.png" alt="rayo" class="h-16">
@@ -526,12 +533,12 @@
             <div class="my-8">
                 <div>
                     <span class="text-xl">Precio del DCR</span>
-                    <span class="block text-2xl font-bold">789,15 USD</span>
+                    <span class="block text-2xl font-bold" id="price"></span>
                     <hr class="my-4">
                 </div>
                 <div>
                     <span class="text-xl">Precio del Ticket</span>
-                    <span class="block text-2xl font-bold">189,15 DCR</span>
+                    <span class="block text-2xl font-bold" id="ticket"></span>
                     <hr class="my-4">
                 </div>
                 <div>
